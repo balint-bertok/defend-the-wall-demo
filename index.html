@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Defend The Wall</title>
+    <script type="module" crossorigin src="/defend-the-wall-demo/assets/index-CiThy5l7.js"></script>
+    <link rel="stylesheet" crossorigin href="/defend-the-wall-demo/assets/index-CGgd73DQ.css">
+  </head>
+  <body>
+    <div id="app">
+      <div id="game">
+        <div id="stage">
+          <div id="stage-frame">
+            <canvas id="game-canvas"></canvas>
+            <div id="banner"></div>
+            <div id="hud">
+              <div class="hud-overlay hud-topleft">
+                <span id="hud-coins"></span>
+                <span id="hud-wood"></span>
+                <span id="hud-iron"></span>
+              </div>
+              <div class="hud-overlay hud-topcenter">
+                <span id="hud-wave"></span>
+                <span id="hud-countdown"></span>
+                <span id="hud-time"></span>
+                <span id="hud-kills"></span>
+              </div>
+              <div class="hud-overlay hud-topright">
+                <button id="hud-speed" type="button"></button>
+                <div id="zoom-controls"></div>
+              </div>
+            </div>
+            <div id="unlock-toast"></div>
+            <div id="dogma-strip"></div>
+            <div id="hotbar"></div>
+            <div id="dogma-choice" hidden></div>
+          </div>
+        </div>
+      </div>
+      <div id="menu-screen"></div>
+    </div>
+  </body>
+</html>
