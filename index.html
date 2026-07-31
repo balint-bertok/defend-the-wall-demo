@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Defend The Wall</title>
-    <script type="module" crossorigin src="/defend-the-wall-demo/assets/index-tkdFyeZD.js"></script>
-    <link rel="stylesheet" crossorigin href="/defend-the-wall-demo/assets/index-DsQboYfH.css">
+    <script type="module" crossorigin src="/defend-the-wall-demo/assets/index-BxCccV_B.js"></script>
+    <link rel="stylesheet" crossorigin href="/defend-the-wall-demo/assets/index-B07G84ae.css">
   </head>
   <body>
     <div id="app">
@@ -20,18 +20,20 @@
                 <span id="hud-wood"></span>
                 <span id="hud-stone"></span>
                 <span id="hud-iron"></span>
-                <div id="hud-supply"></div>
-              </div>
-              <div class="hud-overlay hud-topcenter">
-                <span id="hud-wave"></span>
-                <span id="hud-countdown"></span>
-                <span id="hud-time"></span>
-                <span id="hud-kills"></span>
+                <div id="hud-arrows"></div>
               </div>
               <div class="hud-overlay hud-topright">
-                <button id="hud-mute" type="button"></button>
-                <button id="hud-speed" type="button"></button>
-                <div id="zoom-controls"></div>
+                <div id="hud-controls">
+                  <button id="hud-mute" class="hud-control" type="button"></button>
+                  <button id="hud-speed" class="hud-control" type="button"></button>
+                  <div id="zoom-controls" class="hud-control"></div>
+                </div>
+                <div id="hud-info">
+                  <span id="hud-wave"></span>
+                  <span id="hud-countdown"></span>
+                  <span id="hud-time"></span>
+                  <span id="hud-kills"></span>
+                </div>
               </div>
             </div>
             <div id="unlock-toast"></div>
