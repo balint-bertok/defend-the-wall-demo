@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Defend The Wall</title>
-    <script type="module" crossorigin src="/defend-the-wall-demo/assets/index-y_4ItJ_G.js"></script>
-    <link rel="stylesheet" crossorigin href="/defend-the-wall-demo/assets/index-CWDltAPi.css">
+    <script type="module" crossorigin src="/defend-the-wall-demo/assets/index-hyHnRVa7.js"></script>
+    <link rel="stylesheet" crossorigin href="/defend-the-wall-demo/assets/index-a5gHPXJw.css">
   </head>
   <body>
     <div id="app">
@@ -15,14 +15,10 @@
             <canvas id="game-canvas"></canvas>
             <div id="banner"></div>
             <div id="hud">
-              <div class="hud-overlay hud-topleft">
-                <div id="hud-arrows"></div>
-              </div>
-              <div class="hud-overlay hud-topright">
-                <div id="hud-controls">
-                  <button id="hud-mute" class="hud-control" type="button"></button>
-                  <button id="hud-speed" class="hud-control" type="button"></button>
-                  <div id="zoom-controls" class="hud-control"></div>
+              <div id="hud-top">
+                <div class="hud-top-side">
+                  <div id="hud-stocks"></div>
+                  <div id="hud-chain"></div>
                 </div>
                 <div id="hud-info">
                   <span id="hud-wave"></span>
@@ -31,8 +27,18 @@
                   <span id="hud-time"></span>
                   <span id="hud-kills"></span>
                 </div>
+                <div class="hud-top-side hud-top-right">
+                  <div id="hud-workers"></div>
+                  <div id="hud-controls">
+                    <button id="hud-mute" class="hud-control" type="button"></button>
+                    <button id="hud-speed" class="hud-control" type="button"></button>
+                    <div id="zoom-controls" class="hud-control"></div>
+                  </div>
+                </div>
               </div>
             </div>
+            <div id="chain-modal" hidden></div>
+            <div id="workers-modal" hidden></div>
             <div id="unlock-toast"></div>
             <div id="dogma-strip"></div>
             <div id="hotbar"></div>
